@@ -4,17 +4,19 @@
   "description": "Frequently Asked Questions about Menyoo Platform",
   "main": "index.js",
   "scripts": {
-    "production": "gulp views && gulp css && gulp scripts"
+    "production": "gulp copy-images && gulp views && gulp css && gulp scripts"
   },
   "homepage": "https://github.com/menyoo-me/faq#readme",
   "paths": {
     "src": {
       "css": "./src/css/",
       "js": "./src/js/",
+      "images": "./src/images/",
       "views": "./src/views/"
     },
     "dist": {
       "base": "./dist/",
+      "images": "./dist/images/",
       "css": "./dist/css/",
       "js": "./dist/js/"
     },
@@ -41,6 +43,7 @@
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^8.4.1",
+    "browser-sync": "^2.24.6",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-plumber": "^1.2.0",

@@ -2,6 +2,7 @@
 const paths = require("./package.json").paths;
 
 const gulp = require("gulp");
+const browserSync = require("browser-sync").create();
 const concat = require("gulp-concat");
 const plumber = require("gulp-plumber");
 const pug = require('gulp-pug');
@@ -46,6 +47,11 @@ gulp.task('scripts', () => {
   .pipe(gulp.dest('./dist/js'));
 });
 
+// COPY IMAGES
+gulp.task('gd yarn.lock', () => {
+  return gulp.src(paths.src.images + '**.*')
+    .pipe(gulp.dest(paths.dist.images));
+});
 
 // VIEWS
 gulp.task('views', () => {
@@ -57,7 +63,22 @@ gulp.task('views', () => {
 
 // WATCH
 gulp.task('default', function () {
-  gulp.watch("./src/views/**/*.pug", ["views"]);
-  gulp.watch("./src/js/**/*.js", ["scripts"]);
+  gulp.watch(paths.src.views + "**/*.pug", ["views"]);
+  gulp.watch(paths.src.js + "**/*.js", ["scripts"]);
   gulp.watch(paths.dist.base + "**/*.html", ["css"]);
+});
+
+// SERVER
+gulp.task("serve", ["css"], () => {
+  gulpfile.js.init({
+    server: {
+      baseDir: "./dist/"
+    }
+  });
+
+  gulp.watch(paths.src.views + "**/*.pug", ["views"]);
+  gulp.watch(paths.src.js + "**/*.js", ["scripts"]);
+  gulp.watch(paths.src.css + "*.css", ["css"]);
+  gulp.watch(paths.dist.base + "**/*.html", ["css"]);
+  gulp.watch(paths.dist.base + "*.html").on("change", browserSync.reload);
 });

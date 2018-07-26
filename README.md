@@ -1,6 +1,8 @@
 # Menyoo FAQ
 
-### Install dependencies
+Frequently Asked Questions about Menyoo Platform
+
+## Install dependencies
 
 `yarn`
 

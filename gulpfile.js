@@ -48,7 +48,7 @@ gulp.task('scripts', () => {
 });
 
 // COPY IMAGES
-gulp.task('gd yarn.lock', () => {
+gulp.task('images', () => {
   return gulp.src(paths.src.images + '**.*')
     .pipe(gulp.dest(paths.dist.images));
 });

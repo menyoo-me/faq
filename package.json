@@ -4,7 +4,7 @@
   "description": "Frequently Asked Questions about Menyoo Platform",
   "main": "index.js",
   "scripts": {
-    "production": "gulp copy-images && gulp views && gulp css && gulp scripts"
+    "production": "gulp images && gulp views && gulp css && gulp scripts"
   },
   "homepage": "https://github.com/menyoo-me/faq#readme",
   "paths": {

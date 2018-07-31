@@ -45,6 +45,14 @@ let defaultConfig = require("tailwindcss/defaultConfig")();
 let colors = {
   transparent: "transparent",
 
+  'messenger-lightest' : '#E6F3FF',
+  'messenger-lighter' : '#99CEFF',
+  'messenger-light' : '#4DA9FF',
+  'messenger' : '#0084FF',
+  'messenger-dark' : '#0077E6',
+  'messenger-darker' : '#004F99',
+  'messenger-darkest' : '#00284D',
+
   black: "#22292f",
   'grey-lightest' : '#EAEAEA',
   'grey-lighter' : '#ADABAB',

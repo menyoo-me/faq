@@ -70,7 +70,7 @@ gulp.task('default', function () {
 
 // SERVER
 gulp.task("serve", ["css"], () => {
-  gulpfile.js.init({
+  browserSync.init({
     server: {
       baseDir: "./dist/"
     }

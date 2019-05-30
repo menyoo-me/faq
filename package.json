@@ -1,6 +1,6 @@
 {
   "name": "menyoo-faq",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "description": "Frequently Asked Questions about Menyoo Platform",
   "main": "index.js",
   "scripts": {

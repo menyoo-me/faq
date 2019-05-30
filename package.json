@@ -4,7 +4,8 @@
   "description": "Frequently Asked Questions about Menyoo Platform",
   "main": "index.js",
   "scripts": {
-    "production": "gulp images && gulp views && gulp css && gulp scripts"
+    "build": "webpack --mode production",
+    "watch": "webpack --watch --mode development"
   },
   "homepage": "https://github.com/menyoo-me/faq#readme",
   "paths": {

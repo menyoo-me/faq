@@ -1,29 +1,13 @@
 {
   "name": "menyoo-faq",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "description": "Frequently Asked Questions about Menyoo Platform",
   "main": "index.js",
   "scripts": {
-    "production": "gulp images && gulp views && gulp css && gulp scripts"
+    "dev": "cross-env NODE_ENV=development webpack-dev-server",
+    "prod": "cross-env NODE_ENV=production webpack --no-progress"
   },
   "homepage": "https://github.com/menyoo-me/faq#readme",
-  "paths": {
-    "src": {
-      "css": "./src/css/",
-      "js": "./src/js/",
-      "images": "./src/images/",
-      "views": "./src/views/"
-    },
-    "dist": {
-      "base": "./dist/",
-      "images": "./dist/images/",
-      "css": "./dist/css/",
-      "js": "./dist/js/"
-    },
-    "config": {
-      "tailwind": "./tailwind.js"
-    }
-  },
   "keywords": [
     "node",
     "pug",
@@ -44,12 +28,20 @@
   "devDependencies": {
     "autoprefixer": "^8.4.1",
     "browser-sync": "^2.24.6",
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-plumber": "^1.2.0",
-    "gulp-postcss": "^7.0.0",
-    "gulp-pug": "^4.0.1",
-    "gulp-purgecss": "^0.15.0",
-    "tailwindcss": "^0.6.4"
+    "cross-env": "^5.2.0",
+    "css-loader": "^2.1.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^3.0.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "img-loader": "^3.0.1",
+    "postcss": "^7.0.16",
+    "postcss-loader": "^3.0.0",
+    "style-loader": "^0.23.1",
+    "tailwindcss": "^1.0.2",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.4.1"
   }
 }

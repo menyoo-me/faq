@@ -8,23 +8,6 @@
     "prod": "cross-env NODE_ENV=production webpack --no-progress"
   },
   "homepage": "https://github.com/menyoo-me/faq#readme",
-  "paths": {
-    "src": {
-      "css": "./src/css/",
-      "js": "./src/js/",
-      "images": "./src/images/",
-      "views": "./src/views/"
-    },
-    "dist": {
-      "base": "./dist/",
-      "images": "./dist/images/",
-      "css": "./dist/css/",
-      "js": "./dist/js/"
-    },
-    "config": {
-      "tailwind": "./tailwind.js"
-    }
-  },
   "keywords": [
     "node",
     "pug",

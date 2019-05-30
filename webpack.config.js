@@ -10,6 +10,19 @@ module.exports = {
           minimize: true
         }
       }]
+    }, {
+      test: /\.(png|jpe?g)/i,
+      use: [{
+          loader: 'url-loader',
+          options: {
+            name: './images/[name].[ext]',
+            limit: 10000
+          }
+        },
+        {
+          loader: 'img-loader'
+        }
+      ]
     }]
   },
   plugins: [

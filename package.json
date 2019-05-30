@@ -51,5 +51,7 @@
     "gulp-pug": "^4.0.1",
     "gulp-purgecss": "^0.15.0",
     "tailwindcss": "^0.6.4"
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2"
   }
 }

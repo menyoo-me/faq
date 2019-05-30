@@ -4,8 +4,8 @@
   "description": "Frequently Asked Questions about Menyoo Platform",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production",
-    "watch": "webpack --watch --mode development"
+    "start": "webpack-dev-server --open --mode development",
+    "build": "webpack --mode production"
   },
   "homepage": "https://github.com/menyoo-me/faq#readme",
   "paths": {
@@ -58,6 +58,7 @@
     "tailwindcss": "^0.6.4",
     "url-loader": "^1.1.2",
     "webpack": "^4.32.2",
-    "webpack-cli": "^3.3.2"
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.4.1"
   }
 }

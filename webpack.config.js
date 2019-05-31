@@ -25,7 +25,7 @@ module.exports = {
         }
       }]
     }, {
-      test: /\.(png|jpe?g)/i,
+      test: /\.(png|jpe?g|ico)/i,
       use: [{
           loader: 'url-loader',
           options: {
@@ -44,6 +44,7 @@ module.exports = {
       disable: process.env.NODE_ENV === 'development'
     }),
     new HtmlWebPackPlugin({
+      favicon: 'src/images/favicon.ico',
       template: 'src/index.html',
       filename: './index.html'
     })

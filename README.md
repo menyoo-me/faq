@@ -1,22 +1,22 @@
 # Menyoo FAQ
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cf5f64a3-686f-4a8e-b164-923abf5d3269/deploy-status)](https://app.netlify.com/sites/menyoo-faq/deploys)
+
 Frequently Asked Questions about Menyoo Platform
 
 ## Install dependencies
 
-`yarn`
+```bash
+yarn
+```
 
-### Run Individual Tasks
+### Run Development Mode
 
-#### CSS (TailwindCSS)
-`gulp css`
+```bash
+yarn dev
+```
 
-#### Pug
-`gulp views`
-
-
-### Run Watch Task
-`gulp`
-
-### Run Build Task
-`npm production`
+### Build production
+```bash
+yarn prod
+```
